@@ -1,0 +1,251 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b2875f3d-a4f0-4985-8c55-843ff63fbeb5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.jupyter.widget-view+json": {
+       "model_id": "35140cf3bf624ca6a426b29b9312bad3",
+       "version_major": 2,
+       "version_minor": 0
+      },
+      "text/plain": [
+       "README.md:   0%|          | 0.00/25.0 [00:00<?, ?B/s]"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\huggingface_hub\\file_download.py:144: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\\Users\\delli\\.cache\\huggingface\\hub\\datasets--codesignal--lending-club-loan-accepted. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.\n",
+      "To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development\n",
+      "  warnings.warn(message)\n"
+     ]
+    },
+    {
+     "data": {
+      "application/vnd.jupyter.widget-view+json": {
+       "model_id": "c5dca833334e4c2095754f175c93c646",
+       "version_major": 2,
+       "version_minor": 0
+      },
+      "text/plain": [
+       "accepted_2007_to_2018Q4.csv:   0%|          | 0.00/1.68G [00:00<?, ?B/s]"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "application/vnd.jupyter.widget-view+json": {
+       "model_id": "a0e1e8f22b83495d854f547fef3f89f2",
+       "version_major": 2,
+       "version_minor": 0
+      },
+      "text/plain": [
+       "Generating train split: 0 examples [00:00, ? examples/s]"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19,59) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (59) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n",
+      "C:\\Users\\delli\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:190: DtypeWarning: Columns (0,19) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+      "  for batch_idx, df in enumerate(csv_file_reader):\n"
+     ]
+    },
+    {
+     "ename": "DatasetGenerationError",
+     "evalue": "An error occurred while generating the dataset",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mArrowTypeError\u001b[39m                            Traceback (most recent call last)",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\builder.py:1855\u001b[39m, in \u001b[36mArrowBasedBuilder._prepare_split_single\u001b[39m\u001b[34m(self, gen_kwargs, fpath, file_format, max_shard_size, job_id)\u001b[39m\n\u001b[32m   1854\u001b[39m _time = time.time()\n\u001b[32m-> \u001b[39m\u001b[32m1855\u001b[39m \u001b[43m\u001b[49m\u001b[38;5;28;43;01mfor\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[43m_\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mtable\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;129;43;01min\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[43mgenerator\u001b[49m\u001b[43m:\u001b[49m\n\u001b[32m   1856\u001b[39m \u001b[43m    \u001b[49m\u001b[38;5;28;43;01mif\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[43mmax_shard_size\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;129;43;01mis\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[38;5;129;43;01mnot\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[38;5;28;43;01mNone\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[38;5;129;43;01mand\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[43mwriter\u001b[49m\u001b[43m.\u001b[49m\u001b[43m_num_bytes\u001b[49m\u001b[43m \u001b[49m\u001b[43m>\u001b[49m\u001b[43m \u001b[49m\u001b[43mmax_shard_size\u001b[49m\u001b[43m:\u001b[49m\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\packaged_modules\\csv\\csv.py:191\u001b[39m, in \u001b[36mCsv._generate_tables\u001b[39m\u001b[34m(self, files)\u001b[39m\n\u001b[32m    190\u001b[39m \u001b[38;5;28;01mfor\u001b[39;00m batch_idx, df \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28menumerate\u001b[39m(csv_file_reader):\n\u001b[32m--> \u001b[39m\u001b[32m191\u001b[39m     pa_table = \u001b[43mpa\u001b[49m\u001b[43m.\u001b[49m\u001b[43mTable\u001b[49m\u001b[43m.\u001b[49m\u001b[43mfrom_pandas\u001b[49m\u001b[43m(\u001b[49m\u001b[43mdf\u001b[49m\u001b[43m)\u001b[49m\n\u001b[32m    192\u001b[39m     \u001b[38;5;66;03m# Uncomment for debugging (will print the Arrow table size and elements)\u001b[39;00m\n\u001b[32m    193\u001b[39m     \u001b[38;5;66;03m# logger.warning(f\"pa_table: {pa_table} num rows: {pa_table.num_rows}\")\u001b[39;00m\n\u001b[32m    194\u001b[39m     \u001b[38;5;66;03m# logger.warning('\\n'.join(str(pa_table.slice(i, 1).to_pydict()) for i in range(pa_table.num_rows)))\u001b[39;00m\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pyarrow\\table.pxi:4751\u001b[39m, in \u001b[36mpyarrow.lib.Table.from_pandas\u001b[39m\u001b[34m()\u001b[39m\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pyarrow\\pandas_compat.py:639\u001b[39m, in \u001b[36mdataframe_to_arrays\u001b[39m\u001b[34m(df, schema, preserve_index, nthreads, columns, safe)\u001b[39m\n\u001b[32m    638\u001b[39m \u001b[38;5;28;01mif\u001b[39;00m nthreads == \u001b[32m1\u001b[39m:\n\u001b[32m--> \u001b[39m\u001b[32m639\u001b[39m     arrays = \u001b[43m[\u001b[49m\u001b[43mconvert_column\u001b[49m\u001b[43m(\u001b[49m\u001b[43mc\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mf\u001b[49m\u001b[43m)\u001b[49m\n\u001b[32m    640\u001b[39m \u001b[43m              \u001b[49m\u001b[38;5;28;43;01mfor\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[43mc\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mf\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;129;43;01min\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[38;5;28;43mzip\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43mcolumns_to_convert\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mconvert_fields\u001b[49m\u001b[43m)\u001b[49m\u001b[43m]\u001b[49m\n\u001b[32m    641\u001b[39m \u001b[38;5;28;01melse\u001b[39;00m:\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pyarrow\\pandas_compat.py:639\u001b[39m, in \u001b[36m<listcomp>\u001b[39m\u001b[34m(.0)\u001b[39m\n\u001b[32m    638\u001b[39m \u001b[38;5;28;01mif\u001b[39;00m nthreads == \u001b[32m1\u001b[39m:\n\u001b[32m--> \u001b[39m\u001b[32m639\u001b[39m     arrays = [\u001b[43mconvert_column\u001b[49m\u001b[43m(\u001b[49m\u001b[43mc\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mf\u001b[49m\u001b[43m)\u001b[49m\n\u001b[32m    640\u001b[39m               \u001b[38;5;28;01mfor\u001b[39;00m c, f \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28mzip\u001b[39m(columns_to_convert, convert_fields)]\n\u001b[32m    641\u001b[39m \u001b[38;5;28;01melse\u001b[39;00m:\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pyarrow\\pandas_compat.py:626\u001b[39m, in \u001b[36mdataframe_to_arrays.<locals>.convert_column\u001b[39m\u001b[34m(col, field)\u001b[39m\n\u001b[32m    624\u001b[39m     e.args += (\u001b[33m\"\u001b[39m\u001b[33mConversion failed for column \u001b[39m\u001b[38;5;132;01m{!s}\u001b[39;00m\u001b[33m with type \u001b[39m\u001b[38;5;132;01m{!s}\u001b[39;00m\u001b[33m\"\u001b[39m\n\u001b[32m    625\u001b[39m                .format(col.name, col.dtype),)\n\u001b[32m--> \u001b[39m\u001b[32m626\u001b[39m     \u001b[38;5;28;01mraise\u001b[39;00m e\n\u001b[32m    627\u001b[39m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m field_nullable \u001b[38;5;129;01mand\u001b[39;00m result.null_count > \u001b[32m0\u001b[39m:\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pyarrow\\pandas_compat.py:620\u001b[39m, in \u001b[36mdataframe_to_arrays.<locals>.convert_column\u001b[39m\u001b[34m(col, field)\u001b[39m\n\u001b[32m    619\u001b[39m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[32m--> \u001b[39m\u001b[32m620\u001b[39m     result = \u001b[43mpa\u001b[49m\u001b[43m.\u001b[49m\u001b[43marray\u001b[49m\u001b[43m(\u001b[49m\u001b[43mcol\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;28;43mtype\u001b[39;49m\u001b[43m=\u001b[49m\u001b[43mtype_\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mfrom_pandas\u001b[49m\u001b[43m=\u001b[49m\u001b[38;5;28;43;01mTrue\u001b[39;49;00m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43msafe\u001b[49m\u001b[43m=\u001b[49m\u001b[43msafe\u001b[49m\u001b[43m)\u001b[49m\n\u001b[32m    621\u001b[39m \u001b[38;5;28;01mexcept\u001b[39;00m (pa.ArrowInvalid,\n\u001b[32m    622\u001b[39m         pa.ArrowNotImplementedError,\n\u001b[32m    623\u001b[39m         pa.ArrowTypeError) \u001b[38;5;28;01mas\u001b[39;00m e:\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pyarrow\\array.pxi:362\u001b[39m, in \u001b[36mpyarrow.lib.array\u001b[39m\u001b[34m()\u001b[39m\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pyarrow\\array.pxi:87\u001b[39m, in \u001b[36mpyarrow.lib._ndarray_to_array\u001b[39m\u001b[34m()\u001b[39m\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pyarrow\\error.pxi:92\u001b[39m, in \u001b[36mpyarrow.lib.check_status\u001b[39m\u001b[34m()\u001b[39m\n",
+      "\u001b[31mArrowTypeError\u001b[39m: (\"Expected bytes, got a 'int' object\", 'Conversion failed for column id with type object')",
+      "\nThe above exception was the direct cause of the following exception:\n",
+      "\u001b[31mDatasetGenerationError\u001b[39m                    Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[1]\u001b[39m\u001b[32m, line 4\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[34;01mdatasets\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m load_dataset\n\u001b[32m      3\u001b[39m \u001b[38;5;66;03m# Load the dataset from Hugging Face\u001b[39;00m\n\u001b[32m----> \u001b[39m\u001b[32m4\u001b[39m dataset = \u001b[43mload_dataset\u001b[49m\u001b[43m(\u001b[49m\u001b[33;43m\"\u001b[39;49m\u001b[33;43mcodesignal/lending-club-loan-accepted\u001b[39;49m\u001b[33;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\load.py:2084\u001b[39m, in \u001b[36mload_dataset\u001b[39m\u001b[34m(path, name, data_dir, data_files, split, cache_dir, features, download_config, download_mode, verification_mode, keep_in_memory, save_infos, revision, token, streaming, num_proc, storage_options, trust_remote_code, **config_kwargs)\u001b[39m\n\u001b[32m   2081\u001b[39m     \u001b[38;5;28;01mreturn\u001b[39;00m builder_instance.as_streaming_dataset(split=split)\n\u001b[32m   2083\u001b[39m \u001b[38;5;66;03m# Download and prepare data\u001b[39;00m\n\u001b[32m-> \u001b[39m\u001b[32m2084\u001b[39m \u001b[43mbuilder_instance\u001b[49m\u001b[43m.\u001b[49m\u001b[43mdownload_and_prepare\u001b[49m\u001b[43m(\u001b[49m\n\u001b[32m   2085\u001b[39m \u001b[43m    \u001b[49m\u001b[43mdownload_config\u001b[49m\u001b[43m=\u001b[49m\u001b[43mdownload_config\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m   2086\u001b[39m \u001b[43m    \u001b[49m\u001b[43mdownload_mode\u001b[49m\u001b[43m=\u001b[49m\u001b[43mdownload_mode\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m   2087\u001b[39m \u001b[43m    \u001b[49m\u001b[43mverification_mode\u001b[49m\u001b[43m=\u001b[49m\u001b[43mverification_mode\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m   2088\u001b[39m \u001b[43m    \u001b[49m\u001b[43mnum_proc\u001b[49m\u001b[43m=\u001b[49m\u001b[43mnum_proc\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m   2089\u001b[39m \u001b[43m    \u001b[49m\u001b[43mstorage_options\u001b[49m\u001b[43m=\u001b[49m\u001b[43mstorage_options\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m   2090\u001b[39m \u001b[43m\u001b[49m\u001b[43m)\u001b[49m\n\u001b[32m   2092\u001b[39m \u001b[38;5;66;03m# Build dataset for splits\u001b[39;00m\n\u001b[32m   2093\u001b[39m keep_in_memory = (\n\u001b[32m   2094\u001b[39m     keep_in_memory \u001b[38;5;28;01mif\u001b[39;00m keep_in_memory \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m \u001b[38;5;28;01melse\u001b[39;00m is_small_dataset(builder_instance.info.dataset_size)\n\u001b[32m   2095\u001b[39m )\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\builder.py:925\u001b[39m, in \u001b[36mDatasetBuilder.download_and_prepare\u001b[39m\u001b[34m(self, output_dir, download_config, download_mode, verification_mode, dl_manager, base_path, file_format, max_shard_size, num_proc, storage_options, **download_and_prepare_kwargs)\u001b[39m\n\u001b[32m    923\u001b[39m \u001b[38;5;28;01mif\u001b[39;00m num_proc \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[32m    924\u001b[39m     prepare_split_kwargs[\u001b[33m\"\u001b[39m\u001b[33mnum_proc\u001b[39m\u001b[33m\"\u001b[39m] = num_proc\n\u001b[32m--> \u001b[39m\u001b[32m925\u001b[39m \u001b[38;5;28;43mself\u001b[39;49m\u001b[43m.\u001b[49m\u001b[43m_download_and_prepare\u001b[49m\u001b[43m(\u001b[49m\n\u001b[32m    926\u001b[39m \u001b[43m    \u001b[49m\u001b[43mdl_manager\u001b[49m\u001b[43m=\u001b[49m\u001b[43mdl_manager\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m    927\u001b[39m \u001b[43m    \u001b[49m\u001b[43mverification_mode\u001b[49m\u001b[43m=\u001b[49m\u001b[43mverification_mode\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m    928\u001b[39m \u001b[43m    \u001b[49m\u001b[43m*\u001b[49m\u001b[43m*\u001b[49m\u001b[43mprepare_split_kwargs\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m    929\u001b[39m \u001b[43m    \u001b[49m\u001b[43m*\u001b[49m\u001b[43m*\u001b[49m\u001b[43mdownload_and_prepare_kwargs\u001b[49m\u001b[43m,\u001b[49m\n\u001b[32m    930\u001b[39m \u001b[43m\u001b[49m\u001b[43m)\u001b[49m\n\u001b[32m    931\u001b[39m \u001b[38;5;66;03m# Sync info\u001b[39;00m\n\u001b[32m    932\u001b[39m \u001b[38;5;28mself\u001b[39m.info.dataset_size = \u001b[38;5;28msum\u001b[39m(split.num_bytes \u001b[38;5;28;01mfor\u001b[39;00m split \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28mself\u001b[39m.info.splits.values())\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\builder.py:1001\u001b[39m, in \u001b[36mDatasetBuilder._download_and_prepare\u001b[39m\u001b[34m(self, dl_manager, verification_mode, **prepare_split_kwargs)\u001b[39m\n\u001b[32m    997\u001b[39m split_dict.add(split_generator.split_info)\n\u001b[32m    999\u001b[39m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[32m   1000\u001b[39m     \u001b[38;5;66;03m# Prepare split will record examples associated to the split\u001b[39;00m\n\u001b[32m-> \u001b[39m\u001b[32m1001\u001b[39m     \u001b[38;5;28;43mself\u001b[39;49m\u001b[43m.\u001b[49m\u001b[43m_prepare_split\u001b[49m\u001b[43m(\u001b[49m\u001b[43msplit_generator\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43m*\u001b[49m\u001b[43m*\u001b[49m\u001b[43mprepare_split_kwargs\u001b[49m\u001b[43m)\u001b[49m\n\u001b[32m   1002\u001b[39m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mOSError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[32m   1003\u001b[39m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mOSError\u001b[39;00m(\n\u001b[32m   1004\u001b[39m         \u001b[33m\"\u001b[39m\u001b[33mCannot find data file. \u001b[39m\u001b[33m\"\u001b[39m\n\u001b[32m   1005\u001b[39m         + (\u001b[38;5;28mself\u001b[39m.manual_download_instructions \u001b[38;5;129;01mor\u001b[39;00m \u001b[33m\"\u001b[39m\u001b[33m\"\u001b[39m)\n\u001b[32m   1006\u001b[39m         + \u001b[33m\"\u001b[39m\u001b[38;5;130;01m\\n\u001b[39;00m\u001b[33mOriginal error:\u001b[39m\u001b[38;5;130;01m\\n\u001b[39;00m\u001b[33m\"\u001b[39m\n\u001b[32m   1007\u001b[39m         + \u001b[38;5;28mstr\u001b[39m(e)\n\u001b[32m   1008\u001b[39m     ) \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\builder.py:1742\u001b[39m, in \u001b[36mArrowBasedBuilder._prepare_split\u001b[39m\u001b[34m(self, split_generator, file_format, num_proc, max_shard_size)\u001b[39m\n\u001b[32m   1740\u001b[39m job_id = \u001b[32m0\u001b[39m\n\u001b[32m   1741\u001b[39m \u001b[38;5;28;01mwith\u001b[39;00m pbar:\n\u001b[32m-> \u001b[39m\u001b[32m1742\u001b[39m \u001b[43m    \u001b[49m\u001b[38;5;28;43;01mfor\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[43mjob_id\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mdone\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mcontent\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;129;43;01min\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m.\u001b[49m\u001b[43m_prepare_split_single\u001b[49m\u001b[43m(\u001b[49m\n\u001b[32m   1743\u001b[39m \u001b[43m        \u001b[49m\u001b[43mgen_kwargs\u001b[49m\u001b[43m=\u001b[49m\u001b[43mgen_kwargs\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mjob_id\u001b[49m\u001b[43m=\u001b[49m\u001b[43mjob_id\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43m*\u001b[49m\u001b[43m*\u001b[49m\u001b[43m_prepare_split_args\u001b[49m\n\u001b[32m   1744\u001b[39m \u001b[43m    \u001b[49m\u001b[43m)\u001b[49m\u001b[43m:\u001b[49m\n\u001b[32m   1745\u001b[39m \u001b[43m        \u001b[49m\u001b[38;5;28;43;01mif\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[43mdone\u001b[49m\u001b[43m:\u001b[49m\n\u001b[32m   1746\u001b[39m \u001b[43m            \u001b[49m\u001b[43mresult\u001b[49m\u001b[43m \u001b[49m\u001b[43m=\u001b[49m\u001b[43m \u001b[49m\u001b[43mcontent\u001b[49m\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\datasets\\builder.py:1898\u001b[39m, in \u001b[36mArrowBasedBuilder._prepare_split_single\u001b[39m\u001b[34m(self, gen_kwargs, fpath, file_format, max_shard_size, job_id)\u001b[39m\n\u001b[32m   1896\u001b[39m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(e, DatasetGenerationError):\n\u001b[32m   1897\u001b[39m         \u001b[38;5;28;01mraise\u001b[39;00m\n\u001b[32m-> \u001b[39m\u001b[32m1898\u001b[39m     \u001b[38;5;28;01mraise\u001b[39;00m DatasetGenerationError(\u001b[33m\"\u001b[39m\u001b[33mAn error occurred while generating the dataset\u001b[39m\u001b[33m\"\u001b[39m) \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[34;01me\u001b[39;00m\n\u001b[32m   1900\u001b[39m \u001b[38;5;28;01myield\u001b[39;00m job_id, \u001b[38;5;28;01mTrue\u001b[39;00m, (total_num_examples, total_num_bytes, writer._features, num_shards, shard_lengths)\n",
+      "\u001b[31mDatasetGenerationError\u001b[39m: An error occurred while generating the dataset"
+     ]
+    }
+   ],
+   "source": [
+    "from datasets import load_dataset\n",
+    "\n",
+    "# Load the dataset from Hugging Face\n",
+    "dataset = load_dataset(\"codesignal/lending-club-loan-accepted\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e5911549-133c-48b7-be0b-684f5629aaf0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Preview the first few rows\n",
+    "dataset[\"train\"].to_pandas().head()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2dab9272-bc73-4c29-a6dc-c7d91d983c80",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 📌 1. Install required packages\n",
+    "!pip install -q datasets lightgbm imbalanced-learn pandas scikit-learn\n",
+    "\n",
+    "# 📌 2. Load the dataset\n",
+    "from datasets import load_dataset\n",
+    "import pandas as pd\n",
+    "\n",
+    "dataset = load_dataset(\"codesignal/lending-club-loan-accepted\")\n",
+    "df = dataset['train'].to_pandas()\n",
+    "\n",
+    "# 📌 3. Preprocess data\n",
+    "df = df.drop(columns=['member_id'], errors='ignore')\n",
+    "df = df.dropna(subset=['loan_amnt', 'int_rate', 'term', 'grade', 'emp_title'])\n",
+    "\n",
+    "# Convert term to numeric (e.g., '36 months' -> 36)\n",
+    "df['term'] = df['term'].str.extract('(\\d+)').astype(float)\n",
+    "\n",
+    "# Add a fake target column if not present (REMOVE this if `default_ind` already exists)\n",
+    "import numpy as np\n",
+    "if 'default_ind' not in df.columns:\n",
+    "    df['default_ind'] = np.random.choice([0, 1], size=len(df), p=[0.85, 0.15])  # Simulated target\n",
+    "\n",
+    "# Encode categorical variables simply (can be improved later)\n",
+    "df['grade'] = df['grade'].astype('category').cat.codes\n",
+    "\n",
+    "# 📌 4. Prepare features and labels\n",
+    "X = df.select_dtypes(include=['float64', 'int64']).drop(columns=['default_ind'])\n",
+    "y = df['default_ind']\n",
+    "\n",
+    "# 📌 5. Train-test split + SMOTE\n",
+    "from sklearn.model_selection import train_test_split\n",
+    "from imblearn.over_sampling import SMOTE\n",
+    "\n",
+    "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n",
+    "sm = SMOTE(random_state=42)\n",
+    "X_res, y_res = sm.fit_resample(X_train, y_train)\n",
+    "\n",
+    "# 📌 6. Train LightGBM Classifier\n",
+    "import lightgbm as lgb\n",
+    "model = lgb.LGBMClassifier()\n",
+    "model.fit(X_res, y_res)\n",
+    "\n",
+    "# 📌 7. Evaluate the model\n",
+    "from sklearn.metrics import classification_report\n",
+    "\n",
+    "y_pred = model.predict(X_test)\n",
+    "print(\"📊 Classification Report:\\n\")\n",
+    "print(classification_report(y_test, y_pred))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cc5e7148-7e37-4f03-bbd2-eec4605579be",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
